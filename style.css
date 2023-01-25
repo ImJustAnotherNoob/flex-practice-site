@@ -1,36 +1,132 @@
-
-body {
+body  {
+    margin: 0;
+    min-height: 200vh;
     display: flex;
     flex-direction: column;
-    font-family: "Roboto", sans-serif;
+    justify-content: space-between;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.header,
+.hero,
+.footer {
+    background-color: #1F2937;
+    color: white;
+}
+
+.hero,
+.info,
+.quote {
+    flex: 1;
 }
 
 .header {
     display: flex;
-    flex-basis: 60px;
     justify-content: space-around;
-    align-items: center;
-    background-color: #1F2937;
+    align-items: flex-start;
+    padding: 20px;
 }
 
-.header-logo {
+#header-logo {
+    color: #F9FAF8;
     font-weight: bold;
     font-size: 24px;
-    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-left-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#hero-main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.info {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#info-header {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    gap: 12px;
+}
+
+.quote {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#quote-text {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color: #1F2937;
+    align-self: center;
+}
+
+#quote-author {
+    color:#1F2937;
+    font-weight: bold;
+    font-size: 24px;
+    align-self: flex-end;
+}
+
+#pear-img {
+    height: 300px;
+    width: auto;
+}
+
+#pear-img-small {
+    height: 100px;
+    width: auto;
+    border: #3882F6 solid 4px;
+    border-radius: 10%;
 }
 
 ul {
     display: flex;
+    gap: 24px;
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
-}
-
-li {
-    margin: 12px;
 }
